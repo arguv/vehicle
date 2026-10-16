@@ -63,3 +63,23 @@
         if (opener) opener.focus();
     });
 })();
+
+(function () {
+    const tabs = document.getElementById('myTab');
+
+    function revealTab(tab) {
+        // Move only the horizontal tab strip, keeping the page position stable.
+        const left = tab.offsetLeft - tabs.offsetLeft;
+        if (left < tabs.scrollLeft) tabs.scrollLeft = left;
+        else if (left + tab.offsetWidth > tabs.scrollLeft + tabs.clientWidth) {
+            tabs.scrollLeft = left + tab.offsetWidth - tabs.clientWidth;
+        }
+    }
+
+    tabs.addEventListener('focusin', (event) => {
+        if (event.target.matches('[role="tab"]')) revealTab(event.target);
+    });
+    if (window.jQuery) {
+        window.jQuery(tabs).on('shown.bs.tab', (event) => revealTab(event.target));
+    }
+})();

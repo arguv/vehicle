@@ -103,3 +103,26 @@ body.image-viewer-open { overflow: hidden; }
 .image-viewer-close { top: 12px; right: 12px; }
 .image-viewer-previous { left: 8px; }
 .image-viewer-next { right: 8px; }
+
+.section-title { font-size: 1.35rem; margin-bottom: 16px; }
+.vehicle-tabs .nav-link:focus-visible {
+    outline: 3px solid #0066cc;
+    outline-offset: -3px;
+}
+.vehicle-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    overscroll-behavior-x: contain;
+}
+.vehicle-tabs .nav-item { flex: 0 0 auto; }
+.vehicle-tabs .nav-link { white-space: nowrap; min-height: 44px; }
+.navigation-hint { color: #59636e; font-size: .8rem; margin-bottom: 6px; }
+@media (max-width: 575.98px) {
+    body { padding: 8px 0; }
+    .container { padding-right: 8px; padding-left: 8px; }
+    .card-header, .card-body { padding: 16px 12px; }
+    .card-header h1 { font-size: 1.5rem; }
+    .vehicle-tabs .nav-link { padding: 10px 12px; font-size: .9rem; }
+}

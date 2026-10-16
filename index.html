@@ -28,47 +28,45 @@
         <div class="card">
             <div class="card-header text-center">
                 <h1>Jeep Compass 2020 Trailhawk 2.4L</h1>
-                <div class="vin text-center">
-                    
-                </div>
             </div>
             
             <div class="card-body">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <p class="navigation-hint" id="navigation-hint">Swipe or scroll for more sections</p>
+                <ul class="nav nav-tabs vehicle-tabs" id="myTab" role="tablist" aria-label="Vehicle sections" aria-describedby="navigation-hint">
                     <li class="nav-item">
-                        <a class="nav-link active" id="services-tab" data-toggle="tab" href="#services" role="tab">Services</a>
+                        <a class="nav-link active" id="services-tab" data-toggle="tab" href="#services" role="tab" aria-controls="services" aria-selected="true">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="specs-tab" data-toggle="tab" href="#specs" role="tab">Manual</a>
+                        <a class="nav-link" id="specs-tab" data-toggle="tab" href="#specs" role="tab" aria-controls="specs" aria-selected="false">Vehicle details</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="wheel-tab" data-toggle="tab" href="#wheel" role="tab">Wheels</a>
+                        <a class="nav-link" id="wheel-tab" data-toggle="tab" href="#wheel" role="tab" aria-controls="wheel" aria-selected="false">Wheels &amp; tires</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="battery-tab" data-toggle="tab" href="#battery" role="tab">Battery</a>
+                        <a class="nav-link" id="battery-tab" data-toggle="tab" href="#battery" role="tab" aria-controls="battery" aria-selected="false">Battery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="lights-tab" data-toggle="tab" href="#lights" role="tab">Lights</a>
+                        <a class="nav-link" id="lights-tab" data-toggle="tab" href="#lights" role="tab" aria-controls="lights" aria-selected="false">Lights</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="fluids-tab" data-toggle="tab" href="#fluids" role="tab">Fluids</a>
+                        <a class="nav-link" id="fluids-tab" data-toggle="tab" href="#fluids" role="tab" aria-controls="fluids" aria-selected="false">Fluids</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="filters-tab" data-toggle="tab" href="#filters" role="tab">Filters</a>
+                        <a class="nav-link" id="filters-tab" data-toggle="tab" href="#filters" role="tab" aria-controls="filters" aria-selected="false">Filters</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="brakes-tab" data-toggle="tab" href="#brakes" role="tab">Brakes</a>
+                        <a class="nav-link" id="brakes-tab" data-toggle="tab" href="#brakes" role="tab" aria-controls="brakes" aria-selected="false">Brakes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="sizes-tab" data-toggle="tab" href="#sizes" role="tab">Dimension</a>
+                        <a class="nav-link" id="sizes-tab" data-toggle="tab" href="#sizes" role="tab" aria-controls="sizes" aria-selected="false">Dimensions</a>
                     </li>
                 </ul>
                 
                 <div class="tab-content" id="myTabContent">
                     <!-- Services Tab -->
-                    <div class="tab-pane fade show active" id="services" role="tabpanel">
+                    <div class="tab-pane fade show active" id="services" role="tabpanel" aria-labelledby="services-tab" tabindex="0">
+                        <h2 class="section-title">Vehicle services</h2>
                         <div class="section">
-                            <h3>Vehicle Services</h3>
                             <div class="row">
                                 <div class="col-md-6">
                                     <ul class="list-group">
@@ -94,7 +92,8 @@
                     </div>
                     
                     <!-- Fluids Tab -->
-                    <div class="tab-pane fade" id="fluids" role="tabpanel">
+                    <div class="tab-pane fade" id="fluids" role="tabpanel" aria-labelledby="fluids-tab" tabindex="0">
+                        <h2 class="section-title">Fluids &amp; capacities</h2>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="spec-box">
@@ -158,7 +157,8 @@
                     </div>
                     
                     <!-- Filters Tab -->
-                    <div class="tab-pane fade" id="filters" role="tabpanel">
+                    <div class="tab-pane fade" id="filters" role="tabpanel" aria-labelledby="filters-tab" tabindex="0">
+                        <h2 class="section-title">Filters &amp; wipers</h2>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="filter-box">
@@ -211,7 +211,8 @@
                     </div>
                     
                     <!-- Specifications Tab -->
-                    <div class="tab-pane fade" id="specs" role="tabpanel">
+                    <div class="tab-pane fade" id="specs" role="tabpanel" aria-labelledby="specs-tab" tabindex="0">
+                        <h2 class="section-title">Vehicle details</h2>
                         <div class="row">
                             <div class="col-md-6">
 								<div class="spec-box">
@@ -308,7 +309,8 @@
                     </div>
                     
                     <!-- Brakes Tab -->
-                    <div class="tab-pane fade" id="brakes" role="tabpanel">
+                    <div class="tab-pane fade" id="brakes" role="tabpanel" aria-labelledby="brakes-tab" tabindex="0">
+                        <h2 class="section-title">Brakes</h2>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="spec-box">
@@ -361,7 +363,8 @@
 
 
                     <!-- Sizes Tab -->
-                    <div class="tab-pane fade" id="sizes" role="tabpanel">
+                    <div class="tab-pane fade" id="sizes" role="tabpanel" aria-labelledby="sizes-tab" tabindex="0">
+                        <h2 class="section-title">Dimensions</h2>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="spec-box">
@@ -391,7 +394,8 @@
 
 
                     <!-- Wheels Tab -->
-                    <div class="tab-pane fade" id="wheel" role="tabpanel">
+                    <div class="tab-pane fade" id="wheel" role="tabpanel" aria-labelledby="wheel-tab" tabindex="0">
+                        <h2 class="section-title">Wheels &amp; tires</h2>
                         <div class="row">
                             <div class="col-md-6">
 
@@ -505,7 +509,8 @@
                     </div>
 
                     <!-- Battery Tab -->
-                    <div class="tab-pane fade" id="battery" role="tabpanel">
+                    <div class="tab-pane fade" id="battery" role="tabpanel" aria-labelledby="battery-tab" tabindex="0">
+                        <h2 class="section-title">Batteries</h2>
                         <div class="row">
                             <div class="col-md-6">
 
@@ -593,7 +598,8 @@
                     </div>
 
                     <!-- Lights Tab -->
-                    <div class="tab-pane fade" id="lights" role="tabpanel">
+                    <div class="tab-pane fade" id="lights" role="tabpanel" aria-labelledby="lights-tab" tabindex="0">
+                        <h2 class="section-title">Lights &amp; bulbs</h2>
                         <div class="row">
                             <div class="col-md-6">
 
