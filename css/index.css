@@ -52,6 +52,54 @@ body {
     padding: 1px;
 }
 
-.zoomed {
-    transform: scale(1.5);
+/* The native modal dialog keeps keyboard focus inside the viewer. */
+.image-zoom { cursor: zoom-in; }
+.image-zoom:focus-visible { outline: 3px solid #0066cc; outline-offset: 3px; }
+body.image-viewer-open { overflow: hidden; }
+.image-viewer {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: rgba(0, 0, 0, 0.94);
+    color: white;
 }
+.image-viewer::backdrop { background: black; }
+.image-viewer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 64px 60px;
+    box-sizing: border-box;
+}
+.image-viewer figure { margin: 0; min-width: 0; text-align: center; }
+.image-viewer img {
+    display: block;
+    max-width: 100%;
+    max-height: calc(100vh - 170px);
+    object-fit: contain;
+    margin: auto;
+}
+.image-viewer figcaption { margin-top: 12px; overflow-wrap: anywhere; }
+.image-viewer button {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background: #222;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+.image-viewer button:hover { background: #444; }
+.image-viewer button:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+.image-viewer-close { top: 12px; right: 12px; }
+.image-viewer-previous { left: 8px; }
+.image-viewer-next { right: 8px; }
